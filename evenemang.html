@@ -1,12 +1,226 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evenemang</title>
+    <link rel="icon" href="images/favicons/ldr-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
-    
+    <header id="main-header">
+        <div class="container">
+            <h1>Evenemang</h1>
+        </div>
+    </header>
+
+    <nav id="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Om mig</a> |</li>
+                <li><a href="plats.html">Landskap</a> |</li>
+                <li><a href="evenemang.html"><b>Evenemang</b></a> |</li>
+                <li><a href="galleri.html">Galleri</a> |</li>
+                <li><a href="git.html">Git</a> |</li>
+            </ul>
+        </div>
+    </nav>
+
+    <hr>
+
+    <h2>Lana Del Rey - Småland Turné mars 2023!</h2>
+
+    <img src="images/pictures/LANA.png" alt="Lana-Del-Rey" title="Lana-Del-Rey" id="Lana-Del-Rey" width="400">
+
+    <br>
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="red" stroke-width="4" fill="orange"></circle>
+    </svg>
+
+
+    <p>Har du också längtat till att se Lana Del Rey live i Sverige? Vi har bra nyheter just för dig.
+        <br>
+        Längtan är äntligen över då Lana ska turnera i Småland! Datum och platser hittas nedan på sidan.
+        <br>
+        Glöm inte att anmäla intresse för att få köpa biljetter så snart som möjligt!
+    </p>
+
+
+    <img src="images/pictures/Lana_del_rey_-_off_to_the_races.jpg" alt="Lana-Del-Rey" title="Lana-Del-Rey-Logo"
+        id="Lana-Del-Rey-Logo" width="400">
+
+    <table>
+        <thead>
+            <tr>
+                <th>Stad</th>
+                <th>Datum</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Jönköping</td>
+                <td>5/3</td>
+            </tr>
+            <tr>
+                <td>Värnamo</td>
+                <td>8/3</td>
+            </tr>
+            <tr>
+                <td>Kalmar</td>
+                <td>11/3</td>
+            </tr>
+            <tr>
+                <td>Västervik</td>
+                <td>14/3</td>
+            </tr>
+            <tr>
+                <td>Växjö</td>
+                <td>17/3</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <br>
+
+    <h4>Ange dina uppgifter:</h4>
+
+    <form action="evenemang.html" method="post">
+
+        <p>
+            <label for="first-name">Ditt förnamn:</label>
+            <br>
+            <input type="text" name="first-name" id="first-name" placeholder="Ange förnamn" required minlength="2"
+                maxlength="20">
+        </p>
+
+        <p>
+            <label>
+                Ditt efternamn:
+                <br>
+                <input type="text" name="last-name" id="last-name" placeholder="Ange efternamn" required minlength="2"
+                    maxlength="20">
+            </label>
+        </p>
+
+        <p>
+            <label>
+                E-post:
+                <br>
+                <input type="email" name="email" id="email" placeholder="Ange e-post" required maxlength="40">
+            </label>
+        </p>
+
+        <p>
+            <label>
+                Ditt födelsedatum:
+                <br>
+                <input type="date" name="date" id="date" required>
+            </label>
+        </p>
+
+        <h4>Intresseformulär:</h4>
+
+        <fieldset>
+            <label>
+                Välj vilka biljetter du vill köpa:
+                <br>
+                <input type="checkbox" name="Jönköping" id="Jönköping" value="true"> Jönköping (5/3)
+            </label>
+
+            <br>
+            <label>
+                <input type="checkbox" name="Värnamo" id="Värnamo" value="true"> Värnamo (8/3)
+            </label>
+
+            <br>
+            <label>
+                <input type="checkbox" name="Kalmar" id="Kalmar" value="true"> Kalmar (11/3)
+            </label>
+
+            <br>
+            <label>
+                <input type="checkbox" name="Västervik" id="Västervik" value="true"> Västervik (14/3)
+            </label>
+
+            <br>
+            <label>
+                <input type="checkbox" name="Växjö" id="Växjö" value="true"> Växjö (17/3)
+            </label>
+        </fieldset>
+
+        <br>
+        <fieldset>
+            <legend>Ditt favoritalbum</legend>
+            <label>
+                <input type="radio" name="favourite-album" id="Born-to-Die---Paradise-Edition"
+                    value="Born to Die - Paradise Edition"> Born to Die - Paradise Edition
+            </label>
+
+            <br>
+            <label>
+                <input type="radio" name="favourite-album" id="Ultraviolence" value="Ultraviolence"> Ultraviolence
+            </label>
+
+            <br>
+            <label>
+                <input type="radio" name="favourite-album" id="Honeymoon" value="Honeymoon"> Honeymoon
+            </label>
+
+            <br>
+            <label>
+                <input type="radio" name="favourite-album" id="Lust-for-Life" value="Lust for Life"> Lust for Life
+            </label>
+
+            <br>
+            <label>
+                <input type="radio" name="favourite-album" id="Norman-Fucking-Rockwell!"
+                    value="Norman Fucking Rockwell!"> Norman
+                Fucking Rockwell!
+            </label>
+
+            <br>
+            <label>
+                <input type="radio" name="favourite-album" id="ChemtrailsOver-the-Country-Club"
+                    value="Chemtrails Over the Country Club"> Chemtrails Over the Country Club
+            </label>
+
+            <br>
+            <label>
+                <input type="radio" name="favourite-album" id="favourite-album" value="Blue-Banisters"> Blue Banisters
+            </label>
+
+
+        </fieldset>
+        <br>
+
+        <label for="song-suggestions">Lämna förslag på låtar som ska spelas:</label>
+        <br>
+        <textarea name="song-suggestions" id="song-suggestions" cols="50" rows="10" placeholder="Ange låtar här"
+            maxlength="200"></textarea>
+
+        <br>
+        <input type="submit" value="Skicka">
+        <input type="reset" value="Rensa">
+
+    </form>
+
+    <br>
+    <a href="evenemang.html">Ladda om sidan</a>
+
+    <br>
+    <a href="galleri.html#Lana">Fler bilder på Lana Del Rey</a>
+
+    <footer>
+        <hr>
+        &copy; Jonatan Saydi
+    </footer>
+
+
 </body>
+
 </html>

@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git</title>
+    <link rel="icon" href="images/favicons/favicon-GitHub-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+
 </head>
+
 <body>
-    
+    <header>
+        <nav>
+            <a href="index.html">Om mig</a> | <a href="plats.html">Landskap</a> | <a href="evenemang.html">Evenemang</a>
+            | <a href="galleri.html">Galleri</a> | <a href="git.html"><b>Git</b></a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <h1>Git kommandon</h1>
+
+    <p>Här är en lista på de olika kommandon som används vid versionshantering med git</p>
+
+    <h3>Vad man behöver göra först:</h3>
+
+    <ol>
+        <li>Skapa en lokal mapp för ditt repository</li>
+        <li>Skapa en index.html fil i repot i VS Code (<code>touch index.html</code>)</li>
+        <li>Skapa ett repository på GitHub</li>
+        <li>Byt till repot i terminalen med <code>cd/</code> och navigera till repot</li>
+        <li>Skriv <code>pwd</code> i terminalen för att bekräfta att rätt mapp är vald</li>
+        <li>Skriv <code>git init</code> för att omvandla mappen till en git mapp</li>
+        <li>Länka till repot i GitHub med kommandot
+            <code>git remote add origin https://github.com/username/example.git</code>
+        </li>
+    </ol>
+
+    <h3>När man är klar med sin set-up och ska pusha:</h3>
+
+    <ol>
+        <li><code>git add [file-name]</code></li>
+        <li><code>git commit -m "[changes made]"</code></li>
+        <li><code>git push -u origin main</code></li>
+    </ol>
+
+
+
 </body>
+
 </html>
