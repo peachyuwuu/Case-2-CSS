@@ -1,5 +1,5 @@
 body {
-    background-color: #f4f4f4;
+    background-color: #ddd;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     font-size: 16px;
     line-height: 1.6rem;
@@ -14,12 +14,12 @@ body {
 
 #main-header {
     background-color: lavenderblush;
-
+    padding: 1% 1% 1% 0%;
 }
 
 #navbar {
     background-color: lavender;
-    color: black;
+    padding: 0.33% 0.33% 0.33% 0%;
 }
 
 #navbar ul {
@@ -38,6 +38,30 @@ body {
     font-size: 1.1rem;
     padding-right: 2%;
 }
+
+#navbar a:hover {
+    color: hotpink;
+}
+
+#main {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    background-color: #ddd;
+}
+
+#sidebar {
+    width: 50%;
+    float: right;
+}
+
+#main-footer {
+    background-color: lavender;
+    text-align: center;
+    padding: 1% 1%;
+}
+
+
 
 .gallery-container {
     display: flex;
