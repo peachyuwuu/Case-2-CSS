@@ -14,18 +14,29 @@ body {
 
 #main-header {
     background-color: lavenderblush;
-    padding: 1% 1% 1% 0%;
+    padding: 1% 1% 0% 0%;
+    width: 100%;
+
+}
+
+#main-header h1 {
+    padding-left: 10%;
+    margin-bottom: 40px;
 }
 
 #navbar {
     background-color: lavender;
-    padding: 0.33% 0.33% 0.33% 0%;
+    padding: 1% 1% 1% 0%;
+    width: 90%;
+    padding-left: 10%;
+
 }
 
 #navbar ul {
     padding: 0;
     list-style: none;
-    
+    position: sticky;
+    overflow: hidden;
 }
 
 #navbar li {
@@ -55,13 +66,25 @@ body {
     float: right;
 }
 
+#about-me-img {
+    margin-left: 96px;
+    width: 400px;
+    border-radius: 2%;
+}
+
+
 #main-footer {
     background-color: lavender;
     text-align: center;
     padding: 1% 1%;
+    width: 100%;
 }
 
-
+.clear-fix::after {
+    clear: both;
+    content: "";
+    display: block;
+}
 
 .gallery-container {
     display: flex;
