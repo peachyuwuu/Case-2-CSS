@@ -56,15 +56,11 @@ body {
 #main {
     width: 50%;
     float: left;
-    /* box-sizing: border-box;
-    border: 1px solid red; */
 }
 
 #sidebar {
     width: 50%;
     float: right;
-    /* box-sizing: border-box;
-    border: 1px solid red; */
 }
 
 figure {
@@ -72,11 +68,21 @@ figure {
     padding: 0;
 }
 
-img {
+div.container figure img {
     width: 400px;
-    border-radius: 2%;
 }
 
+#table-cities {
+    margin-bottom: 5%;
+}
+
+#form-interest {
+    margin-bottom: 5%;
+}
+
+#figure-video {
+    margin-bottom: 5%;
+}
 
 #main-footer {
     background-color: lavender;
@@ -97,9 +103,10 @@ img {
 
 .gallery-container {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .gallery-container div {
-    border: 1px solid blue;
-    flex: 1;
+    margin: auto;
 }
