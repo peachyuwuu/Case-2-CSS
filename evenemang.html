@@ -31,13 +31,14 @@
             <img src="images/pictures/LANA.png" alt="Lana-Del-Rey" title="Lana-Del-Rey" id="Lana-Del-Rey" width="400">
 
 
-            <p>Har du också längtat till att se Lana Del Rey live i Sverige? Vi har bra nyheter just för dig.
-                <br>
-                Längtan är äntligen över då Lana ska turnera i Småland! Datum och platser hittas nedan på sidan.
-                <br>
-                Glöm inte att anmäla intresse för att få köpa biljetter så snart som möjligt!
-            </p>
+            <div id="event-paragraph">
+                <p>
+                    Har du också längtat till att se Lana Del Rey live i Sverige? Vi har bra nyheter just för dig.
+                    Längtan är äntligen över då Lana ska turnera i Småland! Datum och platser hittas nedan på sidan.
+                    Glöm inte att anmäla intresse för att få köpa biljetter så snart som möjligt!
+                </p>
 
+            </div>
 
             <img src="images/pictures/Lana_del_rey_-_off_to_the_races.jpg" alt="Lana-Del-Rey" title="Lana-Del-Rey-Logo"
                 id="Lana-Del-Rey-Logo" width="400">
@@ -77,121 +78,136 @@
 
             <h4>Ange dina uppgifter:</h4>
 
-            <form id="form-interest" action="evenemang.html" method="post">
+            <div id="input">
+                <form id="form-interest" action="evenemang.html" method="post">
+                    <div id="name">
+                        <div>
+                            <ul>
+                                <li><label for="first-name">Ditt förnamn:</label></li>
+                                <li><input type="text" name="first-name" id="first-name" placeholder="Ange förnamn"
+                                        required minlength="2" maxlength="20"></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><label>Ditt efternamn:</label></li>
+                                <li><input type="text" name="last-name" id="last-name" placeholder="Ange efternamn"
+                                        required minlength="2" maxlength="20"></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><label>E-post:</label></li>
+                                <li><input type="email" name="email" id="email" placeholder="Ange e-post" required
+                                        maxlength="40"></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><label>Ditt födelsedatum:</label></li>
+                                <li><input type="date" name="date" id="date" required></li>
+                            </ul>
+                        </div>
+                    </div>
 
-                <p>
-                    <label for="first-name">Ditt förnamn:</label>
-                    <input type="text" name="first-name" id="first-name" placeholder="Ange förnamn" required
-                        minlength="2" maxlength="20">
-                </p>
+                    <h4>Intresseformulär:</h4>
+                    <div id="tickets">
+                        <div>
+                            <ul>
+                                <li>Välj vilka biljetter du vill köpa:</li>
+                                <li><label><input type="checkbox" name="Jönköping" id="Jönköping" value="true">
+                                        Jönköping
+                                        (5/3)</label>
+                                </li>
+                                <li><label><input type="checkbox" name="Värnamo" id="Värnamo" value="true"> Värnamo
+                                        (8/3)</label>
+                                </li>
+                                <li><label><input type="checkbox" name="Kalmar" id="Kalmar" value="true"> Kalmar
+                                        (11/3)</label>
+                                </li>
+                                <li><label><input type="checkbox" name="Västervik" id="Västervik" value="true">
+                                        Västervik</label>
+                                    (14/3)</li>
+                                <li><label><input type="checkbox" name="Växjö" id="Växjö" value="true"> Växjö
+                                        (17/3)</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="album">
+                        <div>
+                            <ul>
+                                <li>Ditt favoritalbum</li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="favourite-album" id="Born-to-Die---Paradise-Edition"
+                                            value="Born to Die - Paradise Edition"> Born to Die - Paradise Edition
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="favourite-album" id="Ultraviolence"
+                                            value="Ultraviolence"> Ultraviolence
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="favourite-album" id="Honeymoon" value="Honeymoon">
+                                        Honeymoon
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="favourite-album" id="Lust-for-Life"
+                                            value="Lust for Life">
+                                        Lust for Life
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="favourite-album" id="Norman-Fucking-Rockwell!"
+                                            value="Norman Fucking Rockwell!"> Norman Fucking Rockwell!
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="favourite-album" id="ChemtrailsOver-the-Country-Club"
+                                            value="Chemtrails Over the Country Club"> Chemtrails Over the Country Club
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="favourite-album" id="favourite-album"
+                                            value="Blue-Banisters"> Blue Banisters
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
-                <p>
-                    <label>
-                        Ditt efternamn:
-                        <input type="text" name="last-name" id="last-name" placeholder="Ange efternamn" required
-                            minlength="2" maxlength="20">
-                    </label>
-                </p>
-
-                <p>
-                    <label>
-                        E-post:
-                        <input type="email" name="email" id="email" placeholder="Ange e-post" required maxlength="40">
-                    </label>
-                </p>
-
-                <p>
-                    <label>
-                        Ditt födelsedatum:
-                        <input type="date" name="date" id="date" required>
-                    </label>
-                </p>
-
-                <h4>Intresseformulär:</h4>
-
-                <fieldset>
-                    <label>
-                        Välj vilka biljetter du vill köpa:
-                        <input type="checkbox" name="Jönköping" id="Jönköping" value="true"> Jönköping (5/3)
-                    </label>
-
-                    <label>
-                        <input type="checkbox" name="Värnamo" id="Värnamo" value="true"> Värnamo (8/3)
-                    </label>
-
-                    <label>
-                        <input type="checkbox" name="Kalmar" id="Kalmar" value="true"> Kalmar (11/3)
-                    </label>
-
-                    <label>
-                        <input type="checkbox" name="Västervik" id="Västervik" value="true"> Västervik (14/3)
-                    </label>
-
-                    <label>
-                        <input type="checkbox" name="Växjö" id="Växjö" value="true"> Växjö (17/3)
-                    </label>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Ditt favoritalbum</legend>
-                    <label>
-                        <input type="radio" name="favourite-album" id="Born-to-Die---Paradise-Edition"
-                            value="Born to Die - Paradise Edition"> Born to Die - Paradise Edition
-                    </label>
-
-                    <label>
-                        <input type="radio" name="favourite-album" id="Ultraviolence" value="Ultraviolence">
-                        Ultraviolence
-                    </label>
-
-                    <label>
-                        <input type="radio" name="favourite-album" id="Honeymoon" value="Honeymoon"> Honeymoon
-                    </label>
-
-                    <label>
-                        <input type="radio" name="favourite-album" id="Lust-for-Life" value="Lust for Life"> Lust for
-                        Life
-                    </label>
-
-                    <label>
-                        <input type="radio" name="favourite-album" id="Norman-Fucking-Rockwell!"
-                            value="Norman Fucking Rockwell!"> Norman
-                        Fucking Rockwell!
-                    </label>
-
-                    <label>
-                        <input type="radio" name="favourite-album" id="ChemtrailsOver-the-Country-Club"
-                            value="Chemtrails Over the Country Club"> Chemtrails Over the Country Club
-                    </label>
-
-                    <label>
-                        <input type="radio" name="favourite-album" id="favourite-album" value="Blue-Banisters"> Blue
-                        Banisters
-                    </label>
-
-
-                </fieldset>
-
-                <label for="song-suggestions">Lämna förslag på låtar som ska spelas:</label>
-                <textarea name="song-suggestions" id="song-suggestions" cols="50" rows="10" placeholder="Ange låtar här"
-                    maxlength="200"></textarea>
-
-                <input type="submit" value="Skicka">
-                <input type="reset" value="Rensa">
-
-            </form>
+                    <div id="text-area">
+                        <div>
+                            <ul>
+                                <li>
+                                    <label>Lämna förslag på låtar som ska spelas:</label>
+                                </li>
+                                <li>
+                                    <textarea name="song-suggestions" id="song-suggestions" cols="50" rows="10"
+                                        placeholder="Ange låtar här" maxlength="200"></textarea>
+                                </li>
+                                <li><input type="submit" value="Skicka">
+                                    <input type="reset" value="Rensa">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
-
-
-    <a href="evenemang.html">Ladda om sidan</a>
-
-    <a href="galleri.html#Lana">Fler bilder på Lana Del Rey</a>
 
     <footer id="main-footer">
         &copy; Jonatan Saydi
     </footer>
-
 
 </body>
 

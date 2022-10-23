@@ -72,6 +72,13 @@ div.container figure img {
     width: 400px;
 }
 
+#event-paragraph {
+    width: 400px;
+    text-align: justify;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
 #table-cities {
     margin-bottom: 5%;
 }
@@ -80,13 +87,51 @@ div.container figure img {
     margin-bottom: 5%;
 }
 
+#name {
+    border: 2px solid hotpink;
+    border-radius: 1rem;
+}
+
+#name div ul {
+    list-style: none;
+}
+
+#tickets {
+    border: 2px solid hotpink;
+    border-radius: 1rem;
+}
+
+#tickets div ul {
+    list-style: none;
+}
+
+#album {
+    border: 2px solid hotpink;
+    border-radius: 1rem;
+    margin-top: 2%;
+
+}
+
+#album div ul {
+    list-style: none;
+}
+
+#text-area {
+    border: 2px solid hotpink;
+    border-radius: 1rem;
+    margin-top: 2%;
+}
+
+#text-area div ul {
+    list-style: none;
+}
+
 #figure-video {
     margin-bottom: 5%;
 }
 
-#site-nav a{
+#site-nav a {
     text-decoration: none;
-    color: violet;
 }
 
 #site-nav {
@@ -144,4 +189,8 @@ div.container figure img {
 
 .gallery-container div {
     margin: auto;
+}
+
+.gallery-container div img {
+    border-radius: 10%;
 }
