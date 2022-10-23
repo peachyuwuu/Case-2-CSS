@@ -84,6 +84,41 @@ div.container figure img {
     margin-bottom: 5%;
 }
 
+#site-nav a{
+    text-decoration: none;
+    color: violet;
+}
+
+#site-nav {
+    background-color: rgb(255, 217, 222);
+    padding: 1% 0% 1% 0%;
+    width: 90%;
+    padding-left: 10%;
+}
+
+#site-nav ul {
+    padding: 0;
+    list-style: none;
+    position: sticky;
+    overflow: hidden;
+}
+
+#site-nav li {
+    display: inline;
+}
+
+#site-nav a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding-right: 2%;
+}
+
+#site-nav a:hover {
+    color: hotpink;
+}
+
+
 #main-footer {
     background-color: lavender;
     display: flex;
